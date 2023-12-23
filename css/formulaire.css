@@ -1,0 +1,26 @@
+/*
+https://developer.mozilla.org/fr/docs/web/css/css_selectors
+*/
+#inscription  {
+    background-color: #888;
+}
+.formulaire{
+    display : flex;
+    flex-direction: column;
+}
+.formulaire input[type="text"]{
+    background-color: aqua;
+}
+.formulaire fieldset {
+
+}
+.formulaire legend {
+    font-size: 1.5rem;
+}
+.formulaire .langage {
+   flex-direction: column;
+}
+
+/* sélecteur plus spécifique */
+.form__nom{}
+.form__prenom {}

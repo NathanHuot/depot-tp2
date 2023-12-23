@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/horaire.css">
+</head>
+<body>
+        <header id="entete" >
+            <!-- 
+                Pour crééer rapidement un logo
+                https://www.canva.com/templates/?query=logo  
+            -->
+            <img src="./image/world-wide-web.png" alt="" id="logo">
+            <h1>TP2</h1> 
+            <!-- https://svgbox.net/ -->
+            <!--
+                id peut être utilisée une seule fois dans le document
+                La même classe  peut être utiliser plusieurs fois 
+            -->
+            <span id="menu" >
+                <input type="checkbox" id="chk_burger">
+                <label id="burger" for="chk_burger">
+                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="32" height="32">
+                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=x&color=000" width="32" height="32"> 
+                </label>
+                
+                <nav class="navigation">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#horaire">Horaire</a>
+                    <a href="#inscription">Inscription</a> 
+                    <a href="#galerie">Galerie</a> 
+                    <a href="#tableau">Tableau</a>
+                    <a href="#article">Article</a>
+                    <a href="#video">Video</a>
+                </nav>
+            </span>
+        </header> <!-- fin .entete -->
+
+    <section id="accueil">
+        <h2>Accueil</h2>
+    </section> <!-- fin #accueil -->
+    <section id="galerie" >
+        <h2>Galerie</h2>
+        <figure class="galerie">
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="image/maison_01.jfif" alt="maisonneuve">
+                <figcaption class="galerie__caption" >Le sous titre de l'image</figcaption>
+            </figure>
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="image/maison_02.jfif" alt="maisonneuve">
+                <figcaption class="galerie__caption" >Le sous titre de l'image</figcaption>
+            </figure>
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="image/maison_03.jfif" alt="maisonneuve">
+                <figcaption class="galerie__caption" >Le sous titre de l'image</figcaption>
+            </figure>
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="image/maison_04.jfif" alt="maisonneuve">
+                <figcaption class="galerie__caption" >Le sous titre de l'image</figcaption>
+            </figure>
+            <figure class="galerie__figure">
+                <img class="galerie__img" src="image/maison_05.jfif" alt="maisonneuve">
+                <figcaption class="galerie__caption" >Le sous titre de l'image</figcaption>
+            </figure>
+        </figure> <!-- fin .galerie -->
+    </section><!-- fin #galerie -->
+
+
+
+
+    <section  id="inscription">
+        <h2>Inscription</h2>
+        <!-- https://www.w3schools.com/html/html_forms.asp -->
+         <form action="" class="formulaire">
+            <label class="form__nom" for="">Nom<input type="text"></label>
+            <label class="form__prenom" for="">Nom<input type="text"></label>
+            <fieldset class="langage">
+                <legend>Langage</legend>
+                <label for="chk__html">HTML<input id="chk__html" type="checkbox"  id=""></label>
+                <label for="">CSS<input type="checkbox"  id=""></label>
+                <label for="">JS<input type="checkbox"  id=""></label>
+                <label for="">PHP<input type="checkbox"  id=""></label>
+                <label for="">MySQL<input type="checkbox"  id=""></label>
+                <label for="">Wordpress<input type="checkbox"  id=""></label>
+            </fieldset>
+            <fieldset>
+                <!-- Pour les radio bouton on créé un groupe en utilisant
+                    la même valeur pour l'attribut name  -->
+                <legend>Age</legend>
+                <label for="rad__1">11-15</label>
+                <input type="radio" name="age" id="rad__1">
+                <label for="rad__2">16-20</label>
+                <input type="radio" name="age" id="rad__2">
+                <label for="rad__3">21-25</label>
+                <input type="radio" name="age" id="rad__3">
+            </fieldset>
+        </form>
+
+    </section><!-- fin #inscription -->
+    <section id="tableau">
+        <h2>Tableau</h2>
+        <table>
+            <tr>
+                <th> </th>
+                <th>lundi</th>
+                <th>mardi</th>
+                <th>mercredi</th>
+                <th>jeudi</th>
+                <th>vendredi</th>
+            </tr>
+            <tr>
+                <th>8h</th>
+                <td></td>
+                <td></td>
+                <td class="cours">1M1</td>
+                <td class="cours">1W1</td>
+                <td class="cours">1M1</td>
+            </tr>
+            <tr>
+                <th>9h</th>
+                <td class="cours">1W1</td>
+                <td></td>
+                <td class="cours">1M1</td>
+                <td class="cours">1W1</td>
+                <td class="cours">1M1</td>
+            </tr>
+            <tr>
+                <th>10h</th>
+                <td class="cours">1W1</td>
+                <td></td>
+                <td class="cours">1M1</td>
+                <td class="cours">1W1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>11h</th>
+                <td class="cours">1W1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>12h</th>
+                <td></td>
+                <td class="pause">pause</td>
+                <td class="cours">1M2</td>
+                <td class="pause">pause</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>13h</th>
+                <td></td>
+                <td class="pause">pause</td>
+                <td class="cours">1M2</td>
+                <td class="pause">pause</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>14h</th>
+                <td></td>
+                <td class="cours">1M2</td>
+                <td class="cours">1M2</td>
+                <td class="cours">1J1</td>
+                <td class="cours">Fr</td>
+            </tr>
+            <tr>
+                <th>15h</th>
+                <td class="cours">1J1</td>
+                <td class="cours">1M2</td>
+                <td class="cours">Fr</td>
+                <td class="cours">1J1</td>
+                <td class="cours">Fr</td>
+    
+            </tr>
+            <tr>
+                <th>16h</th>
+                <td class="cours">1J1</td>
+                <td class="cours">1M2</td>
+                <td class="cours">Fr</td>
+                <td class="cours">1J1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>17h</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    
+        </table>
+
+    </section><!-- fin #tableau -->
+    
+    <section class="article">
+        <div class="contenu">
+        <h2>Article</h2>
+        <h3>Ma Pensé du Jour</h3>
+        <h4>Par Nathan Huot</h4>
+        <p class="articleTxt">J'ai pas d'inspiration pour écrire ce texte et noël  approche et je n'ai toujours pas acheter pour ma famille, voili voilou</p>
+        </div>
+        <div class="MonAmiSimon">
+        <figure>
+        <img src="image/simon.png" alt="Mon ami simon">
+        <figcaption>Simon, Mon Ami</figcaption>
+        </figure>
+        </div>
+    </section><!-- fin #article -->
+    <section id="video">
+        <h2>Video</h2>
+        <figure>
+        <iframe width="960" height="600" src="https://www.youtube.com/embed/Qm-f7r0SPiA" title="Life Could Be a Dream Monkey Edition 10 hours" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <figcaption>Vidéo d'un singe qui tourne</figcaption>
+        </figure><!-- fin #video -->
+
+    <footer >
+        3800 R. Sherbrooke E, Montréal, QC H1X 2A2
+        <address>
+            huot.nathan.87@gmail.com
+        </address>
+        Avis de confidentialité | Privacy Notice 
+    </footer>
+   </div>
+</body>
+</html>

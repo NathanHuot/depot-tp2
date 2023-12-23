@@ -1,0 +1,49 @@
+* {
+    margin : 0;
+    padding:0;
+
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+/*  la balise body est le conteneur principal
+     flexbox dont les enfants s'afficheront sur une colonne
+     flex-direction : column;
+*/     
+
+body{
+    display : flex;
+    flex-direction:column;
+
+} 
+
+h1{
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size : clamp(1rem, -0.875rem + 8.333vw, 5.5rem);
+    font-size: large;
+}
+h2{
+    font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+}
+h3{}
+h4{}
+
+p{}
+
+footer{
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-color: black;
+    color: white;
+}
+section{
+    padding-top: 30px;
+}
